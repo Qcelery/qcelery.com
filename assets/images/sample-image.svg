@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f0f0f0"/>
+  
+  <!-- 示例图形 -->
+  <circle cx="400" cy="300" r="200" fill="#3498db"/>
+  <circle cx="350" cy="250" r="30" fill="#2c3e50"/>
+  <circle cx="450" cy="250" r="30" fill="#2c3e50"/>
+  <path d="M320 350 Q400 420 480 350" fill="none" stroke="#2c3e50" stroke-width="20" stroke-linecap="round"/>
+  
+  <!-- 文本 -->
+  <text x="400" y="450" font-family="Arial" font-size="40" text-anchor="middle" fill="#2c3e50">示例图片</text>
+</svg>

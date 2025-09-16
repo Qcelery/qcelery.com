@@ -1,0 +1,76 @@
+/* 背景样式预设 */
+
+/* 示例1：使用在线图片服务作为背景 */
+.bg-online-image-1 {
+    background-image: url('https://picsum.photos/seed/blog-bg1/1920/1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 示例2：另一种在线图片背景 */
+.bg-online-image-2 {
+    background-image: url('https://picsum.photos/seed/blog-bg2/1920/1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* 示例3：带有半透明覆盖层的背景 */
+.bg-with-overlay {
+    background-image: url('https://picsum.photos/seed/blog-bg3/1920/1080');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bg-with-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* 70% 白色覆盖层 */
+    z-index: -1;
+}
+
+/* 示例4：渐变背景 */
+.bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* 示例5：浅色渐变背景，适合后台页面 */
+.bg-light-gradient {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* 主内容区域背景处理，确保内容可读性 */
+.content-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 使用本地背景图片的示例类 */
+/* 如果您在backgrounds文件夹中添加了自己的图片，可以使用以下类 */
+.bg-local-1 {
+    background-image: url('backgrounds/your-background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-local-2 {
+    background-image: url('backgrounds/your-background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
